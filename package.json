@@ -1,6 +1,6 @@
 {
   "name": "subai",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "SubtitleAI: Seamlessly clean up and convert Zoom's VTT subtitles to Markdown with the power of OpenAI.",
   "main": "index.js",
   "homepage": "https://github.com/alanzchen/subai",

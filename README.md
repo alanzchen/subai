@@ -24,11 +24,17 @@ The API key will be saved temporarily for each shell session, so you only need t
 
 ### Environment Variables
 
-The tool requires the following environment variables to be set:
+SubAI can be customized with the following environment variables:
 
-- `OPENAI_API_KEY`: Your OpenAI API key. You can obtain one from the [OpenAI website](https://openai.com).
-- `OPENAI_API_MODEL` (optional, defaults to `gpt-3.5-turbo`): The code name of the GPT model to use. You can find available models in the [OpenAI API documentation](https://platform.openai.com/docs/models).
-- `OPENAI_API_MAX_TOKENS` (optional, defaults to `2048`): The maximum number of tokens per chunk. You can set this variable to limit the size of the generated Markdown chunks. If not provided, the default value will be used.
+- `OPENAI_API_MODEL` (defaults to `gpt-3.5-turbo`): The code name of the GPT model to use. You can find available models in the [OpenAI API documentation](https://platform.openai.com/docs/models).
+- `OPENAI_API_MAX_TOKENS` (defaults to `2048`): The maximum number of tokens per chunk. You can set this variable to limit the size of the generated Markdown chunks. If not provided, the default value will be used.
+- `SUBAI_PROMPT`: Custom prompt for AI. The default prompt is designed to make minimal changes to the original transcript. See `openAIProcessor.js` for the default prompt.
+
+To set an environment variable, run:
+
+```shell
+export VARIABLE=VALUE
+```
 
 ### Additional Commands
 

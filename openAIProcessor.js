@@ -16,7 +16,7 @@ const configuration = new Configuration({
 const openai = new OpenAIApi(configuration);
 
 const maxToken = process.env.OPENAI_API_MAX_TOKENS || 2048;
-const prompt = 'You are a helpful assistant. Below is a raw trasncript for a meeting. Please turn the following transcript into paragraphs, correct the spelling if needed. Each paragraph should begin with the speaker, then a colon, then the cleaned quotes from the speaker. The results should be ready to be published, but should be as close as the original quote.';
+const prompt = process.env.SUBAI_PROMPT || 'You are a helpful assistant. Below is a raw trasncript for a meeting. Please turn the following transcript into paragraphs, correct the spelling if needed. Each paragraph should begin with the speaker, then a colon, then the cleaned quotes from the speaker. The results should be ready to be published, but should be as close as the original quote.';
 const promptToken = countToken(prompt);
 
 function countToken(text) {
