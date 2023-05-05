@@ -1,0 +1,24 @@
+{
+  "name": "subai",
+  "version": "1.0.0",
+  "description": "SubtitleAI: Seamlessly clean up and convert Zoom's VTT subtitles to Markdown with the power of OpenAI.",
+  "main": "index.js",
+  "homepage": "https://github.com/alanzchen/subai",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "subai": "./index.js",
+    "vtt-clean": "./vttParser.js",
+    "ai-process": "./openAIProcessor.js"
+  },
+  "author": "Zenan (Alan) Chen",
+  "license": "ISC",
+  "dependencies": {
+    "cli-progress": "^3.12.0",
+    "fs": "^0.0.1-security",
+    "gpt-3-encoder": "^1.1.4",
+    "openai": "^3.2.1",
+    "webvtt-parser": "^2.2.0"
+  }
+}
